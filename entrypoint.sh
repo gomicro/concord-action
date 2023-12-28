@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-concord $@
+/concord $@
