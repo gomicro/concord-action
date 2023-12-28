@@ -19,5 +19,6 @@ jobs:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Build
-      run: docker build -t ghcr.io/gomicro/concord-action .
+    - name: Build & Push
+      run: docker build -t ghcr.io/gomicro/concord-action . && \
+        docker push ghcr.io/gomicro/concord-action
