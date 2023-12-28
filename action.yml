@@ -5,7 +5,7 @@ inputs:
   file:
     description: 'manifest file to use'
     required: false
-    default: 'concord.yaml'
+    default: 'concord.yml'
   cmd:
     description: 'command to run'
     required: true
