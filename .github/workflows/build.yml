@@ -28,4 +28,4 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       run: |
         docker tag ghcr.io/gomicro/concord-action "ghcr.io/gomicro/concord-action:$GITHUB_REF_NAME"
-        docker push "ghcr.io/gomicro/concord-action$GITHUB_REF_NAME"
+        docker push "ghcr.io/gomicro/concord-action:$GITHUB_REF_NAME"
